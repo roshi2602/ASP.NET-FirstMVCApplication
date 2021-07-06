@@ -1,0 +1,24 @@
+﻿<body>
+<!-- THIS is ViewData ,but it is loosely coupled-->
+    
+@{
+    var ed = ViewData["Employeedemo"]
+        as FirstMVCApplication.Models.Employeedemo;
+}
+<h2>@ViewData["hh"]</h2>
+<table>
+    <tr>
+        <td>Eid</td>
+        <td>@ed.Eid</td>
+    </tr>
+    <tr>
+        <td>Ecity</td>
+        <td>@ed.Ecity</td>
+    </tr>
+    <tr>
+        <td>Ename</td>
+        <td>@ed.Ename</td>
+    </tr>
+</table>
+
+    </body>

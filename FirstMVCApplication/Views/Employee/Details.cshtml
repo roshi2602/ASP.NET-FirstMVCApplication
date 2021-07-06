@@ -1,0 +1,64 @@
+﻿@model FirstMVCApplication.ViewModel.EmpDetail
+
+@{
+    Layout = null;
+}
+<!-at the rate Model is used for strongly typed view ,this is the mostly used approach rather than  view bag or view data -->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.PageTitle</title>
+    <link rel="stylesheet" type="text/css" href="~/Styles/site.css" />
+</head>
+<body>
+    
+    <h1>@Model.PageHeader</h1>
+   
+    <table>
+        <thead>
+            <h1><u>Employee Demo</u></h1>
+            <tr>
+                <td>
+                    Employee name:     @Model.ED.Ename
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Employee id:      @Model.ED.Eid
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Employee city:      @Model.ED.Ecity
+                </td>
+            </tr>
+            </thead>
+        </table>
+    <table>
+        <thead>
+           
+                    <h1><u>Employee Address</u></h1>
+            <tr>
+                <td>
+                    Employee Address id:    @Model.EA.Aid
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Employee City:      @Model.EA.City
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Employee Pincode:      @Model.EA.PinCode
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        
+</body>
+</html>
